@@ -1,3 +1,4 @@
+
 #include <GL/gl.h>
 #include <GL/glut.h>
 void display(void)
@@ -7,278 +8,85 @@ glClear (GL_COLOR_BUFFER_BIT);
 /* draw white polygon (rectangle) with corners at
 * (0.25, 0.25, 0.0) and (0.75, 0.75, 0.0)
 */
-glColor3f (1.0, 1.0, 1.0);
+glColor3f (0, 1, 0);
 glBegin(GL_POLYGON);
-glVertex2d (150, 150);
-glVertex2d (450, 150);
-glVertex2d (450, 450);
-glVertex2d (150, 450);
+
+glVertex2d (325, 350);
+glVertex2d (375, 375);
+glVertex2d (325, 400);
+glVertex2d (300, 450);
+glVertex2d (275, 400);
+glVertex2d (225, 375);
+glVertex2d (275, 350);
+glVertex2d (300, 300);
 glEnd();
 
-glColor3f (1.0, 0.25, 0.0);
-glBegin(GL_TRIANGLES);
-glVertex2d (150, 450);
-glVertex2d (450, 450);
-glVertex2d (300, 570);
+
+glColor3f (1, 0, 0);
+glBegin(GL_POLYGON);
+
+glVertex2d (325, 250);
+glVertex2d (375, 225);
+glVertex2d (325, 200);
+glVertex2d (300, 150);
+glVertex2d (275, 200);
+glVertex2d (225, 225);
+glVertex2d (275, 250);
+glVertex2d (300, 300);
 glEnd();
 
-glColor3f (1.0, 0.25, 0.25);
+
+glColor3f (0, 0, 1);
 glBegin(GL_POLYGON);
-glVertex2d (250, 150);
-glVertex2d (250, 350);
-glVertex2d (350, 350);
-glVertex2d (350, 150);
+
+
+glVertex2d (400, 275);
+glVertex2d (450, 300);
+glVertex2d (400, 325);
+glVertex2d (375, 375);
+glVertex2d (350, 325);
+glVertex2d (300, 300);
+glVertex2d (350, 275);
+glVertex2d (375, 225);
+glEnd();
+
+
+
+glColor3f (1, 0.75, 0);
+glBegin(GL_POLYGON);
+
+
+
+glVertex2d (200, 275);
+glVertex2d (150, 300);
+glVertex2d (200, 325);
+glVertex2d (225, 375);
+glVertex2d (250, 325);
+glVertex2d (300, 300);
+glVertex2d (250, 275);
+glVertex2d (225, 225);
 glEnd();
 
 glColor3f (0.0, 0.25, 1.0);
-glBegin(GL_POLYGON);
-glVertex2d (170, 280);
-glVertex2d (230, 280);
-glVertex2d (230, 320);
-glVertex2d (170, 320);
+glBegin(GL_LINES);
+glVertex2d (450, 300);
+glVertex2d (600, 300);
 glEnd();
-
 glColor3f (0.0, 0.25, 1.0);
-glBegin(GL_POLYGON);
-glVertex2d (370, 280);
-glVertex2d (430, 280);
-glVertex2d (430, 320);
-glVertex2d (370, 320);
-glEnd();
-
-glColor3f (0.50, 1.0, 0.50);
-glBegin(GL_POLYGON);
-glVertex2d (515, 150);
-glVertex2d (535, 150);
-glVertex2d (535, 300);
-glVertex2d (515, 300);
-glEnd();
-
-glColor3f (1.0, 0.25, 1.0);
 glBegin(GL_LINES);
-glVertex2d (535, 300);
-glVertex2d (600, 300);
+glVertex2d (300, 450);
+glVertex2d (300, 600);
 glEnd();
-
-glColor3f (0.0, 1.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (535, 300);
-glVertex2d (555, 300);
-glVertex2d (555, 315);
-glVertex2d (535, 320);
-glEnd();
-
-glColor3f (0.0, 1.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (555, 300);
-glVertex2d (575, 300);
-glVertex2d (575, 310);
-glVertex2d (555, 315);
-glEnd();
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (575, 300);
-glVertex2d (600, 300);
-glVertex2d (600, 300);
-glVertex2d (575, 310);
-glEnd();
-
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (535, 280);
-glVertex2d (555, 285);
-glVertex2d (555, 300);
-glVertex2d (535, 300);
-glEnd();
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (555, 285);
-glVertex2d (575, 290);
-glVertex2d (575, 300);
-glVertex2d (555, 300);
-glEnd();
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (575, 290);
-glVertex2d (600, 300);
-glVertex2d (600, 300);
-glVertex2d (575, 300);
-glEnd();
-
-//2nd
-glColor3f (1.0, 0.25, 1.0);
+glColor3f (0.0, 0.25, 1.0);
 glBegin(GL_LINES);
-glVertex2d (515, 300);
-glVertex2d (450, 300);
+glVertex2d (150, 300);
+glVertex2d (0, 300);
 glEnd();
-
-glColor3f (0.0, 1.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (515, 300);
-glVertex2d (495, 300);
-glVertex2d (495, 315);
-glVertex2d (515, 320);
-glEnd();
-
-glColor3f (0.0, 1.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (495, 300);
-glVertex2d (475, 300);
-glVertex2d (475, 310);
-glVertex2d (495, 315);
-glEnd();
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (475, 300);
-glVertex2d (450, 300);
-glVertex2d (450, 300);
-glVertex2d (475, 310);
-glEnd();
-
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (515, 280);
-glVertex2d (495, 285);
-glVertex2d (495, 300);
-glVertex2d (515, 300);
-glEnd();
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (495, 285);
-glVertex2d (475, 290);
-glVertex2d (475, 300);
-glVertex2d (495, 300);
-glEnd();
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (475, 290);
-glVertex2d (450, 300);
-glVertex2d (450, 300);
-glVertex2d (475, 300);
-glEnd();
-
-
-Crismas:
-glColor3f (1.0, 0.0, 1.0);
-glBegin(GL_POLYGON);
-glVertex2d (70, 150);
-glVertex2d (80, 150);
-glVertex2d (80, 180);
-glVertex2d (70, 180);
-glEnd();
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_TRIANGLES);
-glVertex2d (30, 180);
-glVertex2d (120, 180);
-glVertex2d (75, 300);
-glEnd();
-
-glColor3f (1.0, 0.50, 0.50);
-glBegin(GL_POLYGON);
-glVertex2d (0, 30);
-glVertex2d (600, 30);
-glVertex2d (600, 130);
-glVertex2d (0, 130);
-glEnd();
-
-glColor3f (1.0, 0.50, 0.50);
-glBegin(GL_POLYGON);
-glVertex2d (275, 130);
-glVertex2d (325, 130);
-glVertex2d (325, 150);
-glVertex2d (275, 150);
-glEnd();
-
-glColor3f (1.0, 0.50, 0.50);
-glBegin(GL_POLYGON);
-glVertex2d (60, 130);
-glVertex2d (90, 130);
-glVertex2d (90, 150);
-glVertex2d (60, 150);
-glEnd();
-
-glColor3f (1.0, 0.50, 0.50);
-glBegin(GL_POLYGON);
-glVertex2d (505, 130);
-glVertex2d (545, 130);
-glVertex2d (545, 150);
-glVertex2d (505, 150);
-glEnd();
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (515, 300);
-glVertex2d (535, 300);
-glVertex2d (535, 320);
-glVertex2d (515, 320);
-glEnd();
-
-//3rd
-glColor3f (1.0, 0.25, 1.0);
+glColor3f (0.0, 0.25, 1.0);
 glBegin(GL_LINES);
-glVertex2d (525, 300);
-glVertex2d (525, 390);
+glVertex2d (300, 150);
+glVertex2d (300, 0);
 glEnd();
-
-glColor3f (0.0, 1.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (525, 300);
-glVertex2d (555, 300);
-glVertex2d (555, 315);
-glVertex2d (535, 320);
-glEnd();
-
-glColor3f (0.0, 1.0, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (555, 300);
-glVertex2d (575, 300);
-glVertex2d (575, 310);
-glVertex2d (555, 315);
-glEnd();
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (575, 300);
-glVertex2d (600, 300);
-glVertex2d (600, 300);
-glVertex2d (575, 310);
-glEnd();
-
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (535, 280);
-glVertex2d (555, 285);
-glVertex2d (555, 300);
-glVertex2d (535, 300);
-glEnd();
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (555, 285);
-glVertex2d (575, 290);
-glVertex2d (575, 300);
-glVertex2d (555, 300);
-glEnd();
-
-glColor3f (0.0, 1.00, 0.0);
-glBegin(GL_POLYGON);
-glVertex2d (575, 290);
-glVertex2d (600, 300);
-glVertex2d (600, 300);
-glVertex2d (575, 300);
-glEnd();
-
-
 
 /* don't wait!
 * start processing buffered OpenGL routines
@@ -314,4 +122,3 @@ glutDisplayFunc(display);
 glutMainLoop();
 return 0; /* ISO C requires main to return int. */
 }
-
